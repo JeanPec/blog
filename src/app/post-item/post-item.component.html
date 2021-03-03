@@ -1,17 +1,27 @@
+<mat-card [ngClass]="{'bgWhite': appareilStatus === 'neutre',
+                'bgGreen': appareilStatus === 'positif',
+                'bgRed': appareilStatus === 'négatif'}">
+    <mat-card-header>
+        <mat-card-title >{{ postName }} </mat-card-title>
+        <mat-card-subtitle style="float: right;">{{ postcreatedAt | date:'dd/MM/yyyy, hh:mm a'}}</mat-card-subtitle>
+      </mat-card-header>
 
-<div [ngClass]="{'bgWhite': checkStatus(postloveIts) === 'neutre',
-                'bgGreen' : checkStatus(postloveIts) === 'positif',
-                'bgRed' : checkStatus(postloveIts) === 'négatif'}">
-    <div class = postTitle>{{ postName }} 
-    </div>
-    <div class = postDate>{{ postcreated_at | date:'dd/MM/yyyy, hh:mm a'}}
-    </div>
-    <p class = postCorps>{{ postContent }} 
-    </p>
-    <button class=postButtonGreen 
-    [disabled]="!isAuth"
-    (click)="clickLove()">I love it</button>
-    <button class=postButtonRed
-    [disabled]="!isAuth"
-    (click)="clickUnLove()">I do not love it !</button>
-</div>
+    <mat-card-content>
+        <p>{{ postContent }} 
+        </p>
+    </mat-card-content>
+    
+    <button mat-button
+        [disabled]="!isAuth"
+        (click)="clickLove()">
+        <mat-icon>favorite</mat-icon>
+    </button>
+        <button mat-button
+        [disabled]="!isAuth"
+        (click)="clickUnLove()"><mat-icon>thumb_down</mat-icon>
+    </button>
+    <button mat-button style="float: right;"
+        [disabled]="!isAuth"
+        (click)="clickSupprimer()"><mat-icon>delete</mat-icon>
+    </button>
+</mat-card>

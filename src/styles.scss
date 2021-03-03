@@ -1,90 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
-
+.row{
+    margin: 50px;
+}
+.bloc-title{
+    margin-bottom: 20px;
+}
 .title{
     font-family: arial;
     font-size: xx-large;
     font-weight: bold;
     display:inline;
-    margin-bottom: 20px;
-}
-.postTitle{
-    width:60%;
-    Text-align:left;
-    float:left;
-    font-family: arial;
-    font-size: x-large;
-    font-weight: bold;
-    margin: 1%;
 }
 
-.postDate {
-    width:19%;
-    Text-align:right;
-    float:right;
-    font-family: arial;
-    font-size: medium;
-    font-style: italic;
-    margin: 1%;
-}
 
-.postCorps {
-    font-family: arial;
-    font-size: x-small;
-    margin-right: 1%;
-    margin-left: 1%;
-    margin-bottom: 1%;
-    float: left;
-    height: 10%;
-    width: 100%;
-}
-
-.postButtonGreen {
-    text-align: center;
-    font-family: arial;
-    color: white;
-    background-color: green;
-    width:0 auto;
-    float: left;
-    margin-right: 0.1%;
-    margin-left: 1%;
-    margin-bottom: 1%;
-}
-.postButtonRed {
-    text-align: center;
-    font-family: arial;
-    color: white;
-    background-color: red;
-    width:0 auto;
-    float: left;
-    margin-bottom: 1%;
-}
 
 .bgGreen {
     background-color: lightgreen;
-    width:0 auto;
-    margin-right: 1 em;
-    margin-left:0;
-    overflow:hidden;
-    border: solid 1px rgb(61, 201, 61);
-    border-radius: 4px;
+    margin-bottom: 2%;
 }
 
 .bgRed {
     background-color: lightcoral;
-    width:0 auto;
-    margin-right: 1 em;
-    margin-left:0;
-    overflow:hidden;
-    border: solid 1px rgb(216, 75, 75);
-    border-radius: 4px;
+    margin-bottom: 2%;
 }
 
 .bgWhite {
     background-color: white;
-    width:0 auto;
-    margin-right: 1 em;
-    margin-left:0;
-    overflow:hidden;
-    border: solid 1px rgb(156, 156, 156);
-    border-radius: 4px;
+    margin-bottom: 2%;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

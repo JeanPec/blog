@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="bloc-title">
+          <p class="title">Posts</p>
+        </div>
+            <app-post-item *ngFor="let post of posts; let i = index" [postName]="post.name"
+                                                              [postloveIts]="post.loveIts"
+                                                              [postContent]="post.content"
+                                                              [postcreatedAt]="post.createdAt"
+                                                              [postIndex]=i
+            ></app-post-item>
+      </div>
+    </div>
+</div>
